@@ -1,0 +1,84 @@
+generator client {
+  provider = "prisma-client-js"
+  binaryTargets = ["native", "windows"]
+}
+
+datasource db {
+  provider = "sqlite"
+  url = env("DATABASE_URL")
+}
+
+model LocalColeta {
+  id Int @id @default(autoincrement())
+  nome String
+  rua String
+  numero String
+  complemento String
+  cidade_id Int
+
+  created_at DateTime @default(now())
+  updated_at DateTime? @updatedAt
+
+  @@map("locais_coleta")
+}
+
+model Doacao {
+  id Int @id @default(autoincrement())
+  pessoa_id Int
+  local_id Int
+  data DateTime
+
+  created_at DateTime @default(now())
+  updated_at DateTime? @updatedAt
+
+  @@map("doacoes")
+}
+
+model Pessoa {
+  id Int @id @default(autoincrement())
+  nome String
+  rua String
+  numero String
+  complemento String
+  rg String
+  cidade_id Int
+  tipo_id Int
+
+  created_at DateTime @default(now())
+  updated_at DateTime? @updatedAt
+
+  @@map("pessoas")
+}
+
+model Estado {
+  id Int @id @default(autoincrement())
+  nome String
+  sigla String
+  
+  created_at DateTime @default(now())
+  updated_at DateTime? @updatedAt
+
+  @@map("estados")
+}
+
+model Cidade {
+  id Int @id @default(autoincrement())
+  nome String
+  estado_id String
+  
+  created_at DateTime @default(now())
+  updated_at DateTime? @updatedAt
+
+  @@map("cidades")
+}
+
+model TipoSanguineo {
+  id Int @id @default(autoincrement())
+  tipo String
+  fator String
+  
+  created_at DateTime @default(now())
+  updated_at DateTime? @updatedAt
+
+  @@map("tipos_sanguineos")
+}
