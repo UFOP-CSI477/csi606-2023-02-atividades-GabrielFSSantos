@@ -1,27 +1,5 @@
-# CSI606 - Sistemas WEB I - SI-06
-
-## Período Letivo 2023/2
-
-### *Prof. Fernando Bernardes de Oliveira, Ph.D.*
-
----
-
-## **Atividades Práticas**
-
-### Instruções/regras
-
-1. As atividades são **INDIVIDUAIS**.
-
-1. Em caso de caracterização de cópia entre pessoas e/ou da internet (sem a devida referência), **TODOS** os envolvidos terão **nota zero** (0). Códigos utilizados por pessoas de outros semestres também causam a eliminação da atividade.
-
-1. **Entrega:**
-
-    - **GitHub**: código-fonte e afins. Insira os arquivos criados nas pastas conforme a entrega no seu repositório no GitHub.  
-        = **Atividades/atividade-pratica/sever**  
-        = **Atividades/atividade-pratica/web**  
-    - As datas para as entregas estão disponíveis no Moodle.
-
-## Desenvolvimento: Sistema de Agendamento de Doação de Sangue
+# Sistema de Agendamento de Doação de Sangue
+![Developer](https://img.shields.io/badge/GabrielFSSantos-Atividade_Prática_1-blue)
 
 O objetivo deste sistema é controlar o processo de agendamento de doação de sangue numa determina instituição. O diagrama do banco de dados completo é apresentado na [figura abaixo](./database-model/CSI606-sistema-doacao-sangue.png). Você também pode acessar o modelo definido a partir do [DBDiagram](https://dbdiagram.io/d/CSI606-sistema-doacao-sangue-630d077e0911f91ba5ecf743).
 
@@ -29,41 +7,52 @@ O objetivo deste sistema é controlar o processo de agendamento de doação de s
 
 Este modelo será utilizado para as duas atividades práticas. O escopo de cada atividade será definido apropriadamente.
 
----
+## Requirements
+>Ter instalado pelo menos um gerenciador de pacotes do Node, [Npm](https://www.npmjs.com/) ou [Yarn](https://yarnpkg.com/).
+>Ter instalado banco de dados MongoDB ou utilização do mesmo pelo MongoDB Atlas que permite a utilização online, após o mesmo criar um arquivo <b>.env</b> na pasta backend do projeto com as seguintes informações do banco:
+```sh
+PORT=<Porta onde o backend irá funcionar, sugestão: 3000>
+DB_HOST=<Host do banco de dados para acesso ao mesmo>
+```
 
-## **Atividade Prática 1**
+## Installing
+>Executar na raiz do projeto o seguinte comando para instalar as dependências:
+```sh
+yarn install	   ou		npm install
+```
 
-No caso da **Atividade 1** é esperado que vocês desenvolvam uma *API RESTful* para as seguintes entidades: *tipos_sanguineos*, *pessoas*, *locais_coleta* e *doacoes*. Vocês pode utilizar o desenvolvimento de *estados* e *cidades* que será realizado em sala de aula. Considere as seguintes operações:
+## Use <a  name="usage"></a>
+>Executar na raiz do projeto o seguinte comando para iniciar o projeto:
+```sh
+yarn start	   ou		npm run start
+```
 
-- Inserir - *create*
-- Atualizar - *update*
-- Excluir - *delete*
-- Recuperar - *read* - todos os itens, por *id* e por *nome* (quando se aplicar).
 
-É sugerido que vocês utilizem **Node.js com TypeScript** para esse desenvolvimento. Contudo, isso não é necessário. Vocês podem, inclusivem, utilizar outas tecnologias às suas preferências. É sugerido também que vocês estudem outras arquiteturas de software, além da estrutura que foi utilizada.
+## Contributing
 
-Sintam-se livres para as escolhas e documentem, por gentileza, utilizando o **README.md** das suas respectivas atividades, as tecnologias, as arquiteturas, os passos para execução e demais itens que julgarem importantes.
+> :information_desk_person: O projeto é de livre acesso e uso, então fique à-vontade para realizar um Fork e utilizar do mesmo, como também sugerir dicas e melhorias.
 
----
-
-## **Atividade Prática 2**
-
-A Atividade Prática 2 consiste na implementação da interface Web (em *Next.js/React.js* ou outro *framework* de sua preferência) das entidades indicadas na **Atividade Prática 1**.
-
-Sigam, por gentileza, as mesmas recomendações e considerações indicadas na primeira atividade.  
-
----
-
-**Uma excelente atividade para vocês!**
-
----
-
-***Let's code!***
-
-![Let's code!](https://media.giphy.com/media/USV0ym3bVWQJJmNu3N/giphy.gif)
-
-![Happy coding](https://media.giphy.com/media/3bu85lsWhBTlWcOMN6/giphy.gif)
-
-> ***What we have to learn to do, we learn by doing.***  
 >
-> --- Aristóteles.
+
+> 1. Faça um **fork** do projeto.
+
+> 2. Crie uma nova branch com as suas alterações: `git checkout -b my-feature`
+
+> 3. Salve as alterações e crie uma mensagem de commit contando o que você fez: `git commit -m "feature: My new feature"`
+
+> 4. Envie as suas alterações: `git push origin my-feature`
+
+> Caso tenha alguma dúvida confira este [guia de como contribuir no GitHub](https://github.com/firstcontributions/first-contributions)
+
+## Tech
+> :space_invader: Softwares e tecnologias utilizadas para o desenvolvimento e uso do projeto:
+>
+* [Node.js] - Ferramenta base utilizada para o desenvolvimento geral.
+* [SQLite] - Banco de dados utilizado para registro de informações do mesmo.
+* [VSCode] - Ótimo editor de texto.
+* [StackEdit] - Excelente editor de Markdown online.
+
+[Node.js]: <https://nodejs.org/>
+[VSCode]: <https://code.visualstudio.com/>
+[StackEdit]: <https://stackedit.io/>
+[SQLite]:<https://www.sqlite.org/docs.html>
