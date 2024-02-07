@@ -16,7 +16,7 @@ const create = async (req, res) => {
 		tipo_id
 	}
 
-	pessoa = await prisma.pessoa.create({
+	const pessoa = await prisma.pessoa.create({
 		data: newPessoa,
 	});
 
