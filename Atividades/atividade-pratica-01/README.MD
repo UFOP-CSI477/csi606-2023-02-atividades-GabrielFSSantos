@@ -5,8 +5,6 @@ O objetivo deste sistema é controlar o processo de agendamento de doação de s
 
 ![Diagrama completo do banco de dados](./docs/CSI606-sistema-doacao-sangue.png)
 
-Este modelo será utilizado para as duas atividades práticas. O escopo de cada atividade será definido apropriadamente.
-
 ## Requirements
 >Ter instalado pelo menos um gerenciador de pacotes do Node, [Npm](https://www.npmjs.com/) ou [Yarn](https://yarnpkg.com/).
 >Ter instalado banco de dados MongoDB ou utilização do mesmo pelo MongoDB Atlas que permite a utilização online, após o mesmo criar um arquivo <b>.env</b> na pasta backend do projeto com as seguintes informações do banco:
