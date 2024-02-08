@@ -29,9 +29,9 @@ const read = async (req, res) => {
 
 	const allPessoa = await prisma.pessoa.findMany();
 
-	res.status(200).send({
+	res.status(200).send(
 		allPessoa
-	});
+	);
 }
 
 const update = async (req, res) => {
@@ -61,4 +61,16 @@ const delet = async (req, res) => {
 	});
 }
 
-module.exports = { create, read, update, delet };
+const show = async (req, res) => {
+	const pessoaId = req.body.id;
+
+	const pessoa = await prisma.pessoa.findFirst({
+	  where: { id: pessoaId},
+	});
+
+	res.status(200).send({
+		pessoa
+	});
+}
+
+module.exports = { create, read, update, delet, show};

@@ -9,7 +9,7 @@ O objetivo deste sistema é controlar o processo de agendamento de doação de s
 >Ter instalado pelo menos um gerenciador de pacotes do Node, [Npm](https://www.npmjs.com/) ou [Yarn](https://yarnpkg.com/).
 >Ter instalado banco de dados MongoDB ou utilização do mesmo pelo MongoDB Atlas que permite a utilização online, após o mesmo criar um arquivo <b>.env</b> na pasta backend do projeto com as seguintes informações do banco:
 ```sh
-PORT=<Porta onde o backend irá funcionar, sugestão: 3000>
+PORT=<Porta onde o backend irá funcionar, sugestão: 3333>
 DB_HOST=<Host do banco de dados para acesso ao mesmo>
 ```
 
