@@ -1,0 +1,50 @@
+@import '../../styles/global.scss';
+
+#sidebar {
+  display: flex;
+  height: 100vh;
+
+  aside {
+    background: $secondary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 22rem;
+    height: 100%;
+    position: fixed;
+
+    > img {
+      max-width: 14rem;
+      margin: 4rem 0;
+    }
+    
+    .list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      
+      span {
+        color: black;
+        padding: 1.2rem 0;
+        text-align: center;
+        width: 100%;
+        font-size: 1.5rem;
+        font-weight: 500;
+      
+        transition: 300ms;
+
+        &:hover {
+          color: #FFF;
+          background: $dark;
+        }
+      }
+    }
+  }
+  
+  section {
+    width: 100%;
+    margin: 0rem 0rem 0rem 22rem;
+  }
+}
+
