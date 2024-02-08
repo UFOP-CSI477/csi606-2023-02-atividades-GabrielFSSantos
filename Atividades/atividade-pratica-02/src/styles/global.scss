@@ -1,0 +1,21 @@
+$primary: #9e160a;
+$secondary: #e64529;
+$tertiary: #ffd5a9;
+$background: #f6f6ff;
+$dark: #460000;
+$text: #29292E;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $background;
+  color: $text;
+}
+
+body, input, button, textarea {
+  font: 400 1rem 'Roboto', sans-serif;
+}
