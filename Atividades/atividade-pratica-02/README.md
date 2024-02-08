@@ -1,5 +1,5 @@
 # Sistema de Agendamento de Doação de Sangue
-![Developer](https://img.shields.io/badge/GabrielFSSantos-Atividade_Prática_1-blue)
+![Developer](https://img.shields.io/badge/GabrielFSSantos-Atividade_Prática_2-blue)
 
 O objetivo deste sistema é controlar o processo de agendamento de doação de sangue numa determina instituição. O diagrama do banco de dados completo é apresentado no [DBDiagram](https://dbdiagram.io/d/CSI606-sistema-doacao-sangue-630d077e0911f91ba5ecf743).
 
